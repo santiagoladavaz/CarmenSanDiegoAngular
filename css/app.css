@@ -1,1 +1,19 @@
 @CHARSET "UTF-8";
+
+.page-heder{
+	margin-left:300px;
+	
+}
+
+.thumbnails{
+	float: left;
+	
+}
+
+.span4{
+	padding-left: 20px;
+}
+
+h3{
+	margin-left: 100px;
+}
