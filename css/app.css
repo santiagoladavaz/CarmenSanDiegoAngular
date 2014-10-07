@@ -1,8 +1,7 @@
 @CHARSET "UTF-8";
 
 .page-heder{
-	margin-left:300px;
-	
+	text-align:center;
 }
 
 .thumbnails{
@@ -15,6 +14,8 @@
 }
 
 
+/* Estilos de Viajar*/
+
 .viajar{
 	height: 300px;
 	width: 385px;
@@ -24,7 +25,7 @@
 .avion{
 	height:100px;
 	width:100px;
-	margin-bottom: -66px;
+	margin-bottom: -105px;
 	
 }
 
@@ -35,4 +36,35 @@
 
 .selector{
 	margin-left: 120px;
+}
+
+
+/* Estilo de destinos fallidos - no me el list inline */
+.list-inline{
+	display: inline-block;
+}
+
+.destinosFallidos{
+	height:200px;
+	width: 300px;
+	margin-top: -100px;
+}
+
+/* Estilo de Orden de arresto */
+
+.ordenDeArresto{
+	float:right;
+	margin-top:-413px;
+	margin-right:476px;
+}
+
+.villanoImagen{
+	width:100px;
+	height:100px;
+	margin-left: 43px;
+}
+
+
+.villanos{
+	margin-top: 20px;
 }
