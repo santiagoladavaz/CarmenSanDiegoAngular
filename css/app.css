@@ -14,6 +14,25 @@
 	padding-left: 20px;
 }
 
-h3{
-	margin-left: 100px;
+
+.viajar{
+	height: 300px;
+	width: 385px;
+	margin-top:171px;
+}
+
+.avion{
+	height:100px;
+	width:100px;
+	margin-bottom: -66px;
+	
+}
+
+.subtitulo{
+	margin-left: 118px;
+}
+
+
+.selector{
+	margin-left: 120px;
 }
