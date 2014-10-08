@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	p{
+    visibility:hidden;
+	}
+	
+
+</style>
+<script type="text/javascript">
+$(document).ready(function(){
+	   var $p = $('p');
+	  $("#hide").click(function(){
+	    $p.css('visibility', 'hidden');
+	  });
+	  $("#show").click(function(){
+	    $p.css('visibility', 'visible');
+	  });
+	});
+
+
+</script>
+
+</head>
+<body>
+
+	<p>If you click on the "Hide" button, I will disappear.</p>
+	<button id="hide">Hide</button>
+	<button id="show">Show</button>
+	
+		
+
+
+</body>
+</html>

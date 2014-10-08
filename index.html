@@ -7,9 +7,24 @@
 <!-- BOOTSTRAP -->
 <link rel="stylesheet" 
     href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.min.css">
-<script
-	src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js">
-</script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+<script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+
+<script type="text/javascript">
+	$(document).ready(function(){
+ 		$("#ver").click(function(){
+    		$("#primerasPistas").show();
+  	});
+ 		
+ 	
+});
+
+
+
+
+
+
+</script>	
 
 </head>
 <body>
@@ -35,11 +50,11 @@
 		  <ul class="thumbnails">
  	 		<li class="span4">
     			<div class="thumbnail">
- 	     			<img data-src="holder.js/300x200" alt="">
-     				<h3>Lugar 1</h3>
-     				<button type="button">Ver Pistas</button>
+     				<h3>Banco</h3>
+     				<img src="img/banco.jpg" class="img-polaroid" >
+     				<button class="btn btn-info" id="ver">Ver Pistas</button>
       				<!-- Debe verse cuando apretas el boton -->
-      				<p>PISTAS DEL LUGAR 1</p>
+      				<p id="primerasPistas">PISTAS DEL LUGAR 1</p>
     			</div>
  		  </li>
  		</ul>
@@ -47,11 +62,12 @@
  		<ul class="thumbnails">
  	 		<li class="span4">
     			<div class="thumbnail">
- 	     			<img data-src="holder.js/300x200" alt="">
-     				<h3>Lugar 2</h3>
-     				<button type="button">Ver Pistas</button>
+ 	     			<h3>Club</h3>
+ 	     			<img src="img/club.jpg" class="img-polaroid" >
+     				<button class="btn btn-info" id="ver2">Ver Pistas</button>
+     				
       				<!-- Debe verse cuando apretas el boton -->
-      				<p>PISTAS DEL LUGAR 2</p>
+      				<p id="segundasPistas">PISTAS DEL LUGAR 2</p>
     			</div>
  		  </li>
  		</ul>
@@ -59,11 +75,11 @@
  		<ul class="thumbnails">
  	 		<li class="span4">
     			<div class="thumbnail">
- 	     			<img data-src="holder.js/300x200" alt="">
-     				<h3>Lugar 3</h3>
-     				<button type="button">Ver Pistas</button>
+ 	     			<h3>Biblioteca</h3>
+ 	     			<img src="img/biblioteca.jpg" class="img-polaroid" >
+     				<button class="btn btn-info" id="ver3">Ver Pistas</button>
 					<!--Debe verse cuando apretas el boton -->
-      				<p>PISTAS DEL LUGAR 3</p>
+      				<p id="tercerasPistas">PISTAS DEL LUGAR 3</p>
       			</div>
  		  </li>
  		</ul>

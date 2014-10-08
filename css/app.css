@@ -6,9 +6,27 @@
 
 .thumbnails{
 	float: left;
+	margin-left: -12px;
 	
 }
 
+.thumbnail h3{
+	text-align:center;
+}
+
+.thumbnails p{
+	display: none;
+}
+
+.thumbnails img{
+	width: 100px;
+	height: 100px;
+}
+
+.thumbnails button{
+	margin-left:138px;
+	margin-top: 20px;
+}
 .span4{
 	padding-left: 20px;
 }
@@ -40,6 +58,8 @@
 
 
 /* Estilo de destinos fallidos - no me el list inline */
+
+
 .list-inline{
 	display: inline-block;
 }
@@ -54,7 +74,7 @@
 
 .ordenDeArresto{
 	float:right;
-	margin-top:-413px;
+	margin-top: -310px;
 	margin-right:476px;
 }
 
