@@ -3,12 +3,16 @@
 <head>
 <meta charset="UTF-8">
 <title>Carmen SanDiego</title>
-<link rel="stylesheet" href="css/app.css" />
 <!-- BOOTSTRAP -->
-<link rel="stylesheet" 
-    href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.min.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<!-- /BOOTSTRAP -->
+
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
-<script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
 
 <script type="text/javascript">
 	$(document).ready(function(){
@@ -18,15 +22,11 @@
  		
  	
 });
-
-
-
-
-
-
 </script>	
+<link rel="stylesheet" href="css/app.css" />
 
 </head>
+
 <body>
 	<div class="container">
 	
@@ -37,107 +37,106 @@
 		
 		</div> <!-- Cierra page-heder --> 
 		
+		
+		<div class="estasEn">
 		<h3>
 			Estas en : Argentina
 			<img alt="Argentina" src="img/arg.png" height="42" width="42">
 		</h3>
-		<h3> Antes :España, Chile, China</h3>
-		
-		
-		
-		<div class="lugares">
-		 
-		  <ul class="thumbnails">
- 	 		<li class="span4">
-    			<div class="thumbnail">
-     				<h3>Banco</h3>
-     				<img src="img/banco.jpg" class="img-polaroid" >
-     				<button class="btn btn-info" id="ver">Ver Pistas</button>
-      				<!-- Debe verse cuando apretas el boton -->
-      				<p id="primerasPistas">PISTAS DEL LUGAR 1</p>
-    			</div>
- 		  </li>
- 		</ul>
- 		
- 		<ul class="thumbnails">
- 	 		<li class="span4">
-    			<div class="thumbnail">
- 	     			<h3>Club</h3>
- 	     			<img src="img/club.jpg" class="img-polaroid" >
-     				<button class="btn btn-info" id="ver2">Ver Pistas</button>
-     				
-      				<!-- Debe verse cuando apretas el boton -->
-      				<p id="segundasPistas">PISTAS DEL LUGAR 2</p>
-    			</div>
- 		  </li>
- 		</ul>
- 		
- 		<ul class="thumbnails">
- 	 		<li class="span4">
-    			<div class="thumbnail">
- 	     			<h3>Biblioteca</h3>
- 	     			<img src="img/biblioteca.jpg" class="img-polaroid" >
-     				<button class="btn btn-info" id="ver3">Ver Pistas</button>
-					<!--Debe verse cuando apretas el boton -->
-      				<p id="tercerasPistas">PISTAS DEL LUGAR 3</p>
-      			</div>
- 		  </li>
- 		</ul>
-	</div>
-	
-	<div class="viajar">
-		<div class="avion">
-			<img alt="Viajar" src="img/avion.png" height="100" width="100">
 		</div>
-		<div class="subtitulo">
-			<h3>Viajar a: </h3>
-		</div>
-	
 		
-		<div class="selector">
-		<select class="selectpicker" data-style="btn-primary">
-	  		<option>Bolivia</option>
-    		<option>Egipto</option>
-    		<option>Belice</option>
-   		</select>
-   		</div>
-   </div><!-- Cierra viajar -->	
-   
-   
-   
-   <div class="destinosFallidos">
-   		<h3>Destinos Fallidos</h3>	
-   		<ul class="list-unstyled">
- 			<li class="list-group-item">Mexico</li>
-  			<li class="list-group-item">USA</li>
- 			<li class="list-group-item">Rusia</li>
- 			<li class="list-group-item">España</li>
-  			<li class="list-group-item">Australia</li>
-		</ul>
-  </div>
-   
- <div class="ordenDeArresto">
-	 <div class="well well-small">
- 		 Orden De Arresto
-	</div>
- 	<h3>Emitida contra:</h3>
- 	<div class="villanoImagen">
- 		<img alt="" src="img/burns.png" class="img-circle" width="100px" height="100px ">
- 	</div>
- 	
- 	<div class="villanos">
- 		<select>
-  			<option>Moria Casan</option>
-  			<option>Gordo Valor</option>
-  			<option>Señor Burns</option>
-  			<option>Bonnie</option>
-  			<option>Boudou</option>
-		</select>
- 	</div>
- </div> <!-- Cierra ordenDeArressto -->
-   
-	
-	</div> <!-- Cierra container -->
+		<div class="antes">
+			<h3> Antes :España, Chile, China</h3>
+		</div>
+		
+		
+		<div class="row">
+				  <div class="col-md-4">
+		    			 <div class="thumbnail">
+		    			 	<img src="img/banco.jpg" class="img-thumbnail"/>
+					      	<div class="caption text-center">
+			     				<button class="btn btn-info" id="ver">Visitar Banco</button>
+		     				</div>
+		    			</div>
+		 		  </div>
+		 		
+				  <div class="col-md-4">
+		    			 <div class="thumbnail">
+		    			 	<img src="img/club.jpg" class="img-thumbnail"/>
+					      	<div class="caption text-center">
+			     				<button class="btn btn-info" id="ver">Visitar Club</button>
+		     				</div>
+		    			</div>
+		    		</div>
+		
+				  <div class="col-md-4">
+		    			 <div class="thumbnail">
+		    			 	<img src="img/biblioteca.jpg" class="img-thumbnail"/>
+					      	<div class="caption text-center">
+			     				<button class="btn btn-info" id="ver">Visitar Biblioteca</button>
+		     				</div>
+		    			</div>
+		    	</div>
+			</div>						
 
+
+			
+	<div class="row">
+		<div class="col-md-4">
+			<div class="viajar thumbnail">
+				<div class="avion">
+					<img alt="Viajar" src="img/avion.png" height="100" width="100">
+				</div>
+				<div class="subtitulo">
+					<h3>Viajar a: </h3>
+				</div>
+				<div class="selector text-center">
+				<select class="selectpicker" data-style="btn-primary">
+			  		<option>Bolivia</option>
+		    		<option>Egipto</option>
+		    		<option>Belice</option>
+		   		</select>
+		   		</div>
+			</div>
+		</div>		
+		   
+		 <div class="col-md-4">  
+<!-- 		   <div class="destinosFallidos thumbnail"> -->
+<!-- 		   		<h3>Destinos Fallidos</h3>	 -->
+		   		 <div class="well well-large">
+ 					Destinos Fallidos
+ 				</div>
+		   		 <ul class="list-inline">
+		   			<li>Mexico</li>
+		  			<li>USA</li>
+		 			<li>Rusia</li>
+		 			<li>España</li>
+		  			<li>Australia</li>
+				</ul>
+		  
+		 </div>
+	   </div> <!-- Cierra col md 4 -->
+ 	
+ 	<div class="row">
+ 		<div class="well well-large text-center h2">
+			Orden De Arresto  
+		</div>
+		<h3>Emitida contra:</h3>
+		<div class="villanoImagen text-center">
+		 	<img alt="" src="img/burns.png" class="img-circle">
+		</div>
+		 <div class="villanos text-center">
+		 	<select>
+		  		<option>Moria Casan</option>
+		  		<option>Gordo Valor</option>
+		  		<option>Señor Burns</option>
+		  		<option>Bonnie</option>
+		  		<option>Boudou</option>
+			</select>
+		 </div>
+	</div>
+		 	
+ </div> <!-- Cierra container -->
+ 	
 </body>
 </html>

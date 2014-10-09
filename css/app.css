@@ -1,5 +1,22 @@
 @CHARSET "UTF-8";
 
+body {
+	background-image:url("../img/fondo.png");  
+}
+
+.container {
+	width: 800px;
+	background-color: #ffffff; 
+}
+
+.estasEn {
+	margin-left: 20px;
+}
+
+.antes{
+	margin-left: 20px;
+}
+
 .page-heder{
 	text-align:center;
 }
@@ -18,10 +35,7 @@
 	display: none;
 }
 
-.thumbnails img{
-	width: 100px;
-	height: 100px;
-}
+
 
 .thumbnails button{
 	margin-left:138px;
@@ -35,14 +49,11 @@
 /* Estilos de Viajar*/
 
 .viajar{
-	height: 300px;
-	width: 385px;
-	margin-top:171px;
+	height: 100px;
 }
 
 .avion{
 	height:100px;
-	width:100px;
 	margin-bottom: -105px;
 	
 }
@@ -57,34 +68,17 @@
 }
 
 
-/* Estilo de destinos fallidos - no me el list inline */
-
-
-.list-inline{
-	display: inline-block;
+/* Estilo de destinos fallidos - no me toma el list inline */
+.list-inline li{
+	color:green;
 }
 
-.destinosFallidos{
-	height:200px;
-	width: 300px;
-	margin-top: -100px;
-}
-
-/* Estilo de Orden de arresto */
-
-.ordenDeArresto{
-	float:right;
-	margin-top: -310px;
-	margin-right:476px;
-}
-
-.villanoImagen{
+.villanoImagen img{
 	width:100px;
 	height:100px;
-	margin-left: 43px;
 }
 
 
-.villanos{
+.villanos {
 	margin-top: 20px;
 }
