@@ -3,27 +3,25 @@
 <head>
 <meta charset="UTF-8">
 <title>Carmen SanDiego</title>
+
 <!-- BOOTSTRAP -->
-<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-<!-- Optional theme -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 <!-- /BOOTSTRAP -->
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
 
-<script type="text/javascript">
-	$(document).ready(function(){
- 		$("#ver").click(function(){
-    		$("#primerasPistas").show();
-  	});
- 		
- 	
-});
-</script>	
+<link href="css/popUp.css" rel="stylesheet" type="text/css" />
+
+<script type="text/javascript" src="js/css-pop.js"></script>
+
 <link rel="stylesheet" href="css/app.css" />
+<link rel="shortcut icon" href="img/favicon.ico" />
+
 
 </head>
 
@@ -34,7 +32,6 @@
 			<h1>
 				Carmen San Diego
 			</h1>
-		
 		</div> <!-- Cierra page-heder --> 
 		
 		
@@ -55,7 +52,7 @@
 		    			 <div class="thumbnail">
 		    			 	<img src="img/banco.jpg" class="img-thumbnail"/>
 					      	<div class="caption text-center">
-			     				<button class="btn btn-info" id="ver">Visitar Banco</button>
+			     				<button class="btn btn-info" id="ver" onclick="popup('popUpDiv')">Visitar Banco</button>
 		     				</div>
 		    			</div>
 		 		  </div>
@@ -64,7 +61,7 @@
 		    			 <div class="thumbnail">
 		    			 	<img src="img/club.jpg" class="img-thumbnail"/>
 					      	<div class="caption text-center">
-			     				<button class="btn btn-info" id="ver">Visitar Club</button>
+			     				<button class="btn btn-info" id="ver" onclick="popup('popUpDiv')">Visitar Club</button>
 		     				</div>
 		    			</div>
 		    		</div>
@@ -73,11 +70,24 @@
 		    			 <div class="thumbnail">
 		    			 	<img src="img/biblioteca.jpg" class="img-thumbnail"/>
 					      	<div class="caption text-center">
-			     				<button class="btn btn-info" id="ver">Visitar Biblioteca</button>
+			     				<button class="btn btn-info" id="ver" onclick="popup('popUpDiv')">Visitar Biblioteca</button>
 		     				</div>
 		    			</div>
 		    	</div>
-			</div>						
+			</div>	
+			
+			
+	<!--POPUP-->    
+    
+    <div id="blanket" style="display:none;"></div>
+	<div id="popUpDiv" style="display:none;">
+    		<h3>Pistas</h3>
+    	<a href="#" onclick="popup('popUpDiv')" >Click to Close CSS Pop Up</a>
+	</div>	
+ 
+
+ 	
+	<!-- / POPUP--> 					
 
 
 			
@@ -123,7 +133,7 @@
 		</div>
 		<h3>Emitida contra:</h3>
 		<div class="villanoImagen text-center">
-		 	<img alt="" src="img/burns.png" class="img-circle">
+		 	<img alt="Burns" src="img/burns.png" class="img-circle">
 		</div>
 		 <div class="villanos text-center">
 		 	<select>
@@ -135,6 +145,10 @@
 			</select>
 		 </div>
 	</div>
+	
+	
+
+  
 		 	
  </div> <!-- Cierra container -->
  	
